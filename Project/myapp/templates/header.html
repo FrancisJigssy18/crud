@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo App</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" type="text/css">
+    </head>
+<body>
+    <!-- Start Header -->
+    <nav>
+        <div class="nav-wrapper #29b6f6 light-blue lighten-1">
+          <a href="/" class="brand-logo" style="margin-left: 15px;"><i class="material-icons left">assignment</i>To-Do App</a>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div class="container">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    <!-- End Content -->
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}" ></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}" ></script>
+</body>
+</html>

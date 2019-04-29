@@ -1,0 +1,10 @@
+** INSTALLING VIRTUAL ENVIRONMENT **
+pip install virtualenv
+pip install virtualenvwrapper-win
+
+** CREATING VIRTUAL ENVIRONMENT **
+mkvirtualenv (name of env)
+
+** CREATING DJANGO PROJECT
+django-admin startproject mysite
+
